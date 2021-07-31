@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import NoMatch from './components/NoMatch/NoMatch';
+import ProductDetail from './components/ProductDetail/ProductDetail';
 
 function App() {
 
@@ -18,7 +19,9 @@ function App() {
             <Home/>
           </Route>
 
-          <Route path="/products">
+          {/* Path for product Details */}
+          <Route path="/products/:productId">
+            <ProductDetail/>
           </Route>
 
           <Route exact path="/">
