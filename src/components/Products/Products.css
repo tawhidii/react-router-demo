@@ -1,0 +1,10 @@
+.products-list{
+    border: 1px solid seagreen;
+    border-radius: 10px;
+    margin: 15px;
+
+}
+.products-list img{
+    height: 200px;
+    margin: 20px;
+}
