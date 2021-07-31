@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import Products from '../Products/Products';
+import './Home.css'
 const Home = () => {
     const [products,setProduct] = useState([])
 
@@ -11,7 +12,7 @@ const Home = () => {
     },[])
     console.log(products)
     return (
-        <div>
+        <div className="home-container">
             {
                 products.map(pd=><Products products={pd} key={pd.id}></Products>)
             }
